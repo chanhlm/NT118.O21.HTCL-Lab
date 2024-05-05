@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edtName"
+        android:layout_alignBottom="@+id/edtName"
+        android:text="Nhập tên: "
+        />
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtName"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:text="Nhập"
+        />
+
+
+    <TextView
+        android:id="@+id/txtselection"
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:background="#fff"
+        android:hint="Selected person here"
+        android:layout_below="@+id/btnAdd"
+        android:textSize="40px" />
+
+    <ListView
+        android:id="@+id/lvperson"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/txtselection"
+        android:layout_height="wrap_content">
+    </ListView>
+</RelativeLayout>
